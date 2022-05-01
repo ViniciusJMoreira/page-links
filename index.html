@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        div {
+            width: 150px;
+            height: 150px;
+            display: grid;
+            place-items: center;
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .photo {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        div::before {
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            box-shadow: inset 0 0 0 2px #6b86eb;
+            animation: clipme 5s linear infinite;
+        }
+        @keyframes clipme {
+            0%, 100% {
+                clip: rect(20px , 225px, 140px, 0px);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+        li {
+            width: 100%;
+        }
+        .btn {
+            width: 100%;
+            width: 300px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: start;
+            background-color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            border-radius: 25px;
+            cursor: pointer;
+            border: 2px solid #6b86eb;
+            padding: 0.5rem 0.8rem;
+        }
+        .btn::before {
+            content:'';
+            position: absolute;
+            width: 90%;
+            height: 10%;
+            top: 0;
+            left: 20px;
+            background-color: rgba(255, 255, 255, .04);
+
+        }
+        .btn-img {
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="photo" src="_img/EU E DOG.png" alt="Vinicius e seu cachorro">
+    </div>
+    <ul>
+        <li>
+            <button class="btn" onclick=" window.open('https://github.com/ViniciusJMoreira', '_blank')">
+                <img class="btn-img" src="_img/git-ico.png" alt="">
+                GitHub
+            </button>
+        </li>
+        <li>
+            <button class="btn" onclick=" window.open('#', '_blank')">
+                <img class="btn-img" src="_img/linkin-ico.png" alt="">
+                Linkedin
+            </button>
+        </li>
+        <li>
+            <button class="btn" onclick=" window.open('#', '_blank')">
+                <img class="btn-img" src="_img/inst-ico.png" alt="">
+                Instagram
+            </button>
+        </li>
+        <li>
+            <button class="btn" onclick=" window.open('#', '_blank')">
+                <img class="btn-img" src="_img/twt-ico.png" alt="">
+                Twitter
+            </button>
+        </li>
+    </ul>
+</body>
+</html>
