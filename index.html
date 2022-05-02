@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prototipo</title>
+    <title>Protótipo Portfólio</title>
     <style>
+
+        /* PROTÓTIPO PORTFÓLIO */
+
         @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -17,9 +21,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: url('background.jpg'), #fff;
-            background-size: 30px 30px;
-            animation: background-anime 60s linear infinite;
+            background: url('background3.jpg'), #fff;
+            background-size: 50px 50px;
+            animation: background-anime 50s linear infinite;
         }
         @keyframes background-anime {
             0% {
@@ -29,41 +33,45 @@
                 background-position: 100% 100%;
             }
         }
-        div {
+
+        /* LOGO PRINCIPAL */
+
+        .logo-principal {
             width: 150px;
             height: 150px;
             display: grid;
             place-items: center;
             position: relative;
             margin: 50px 0 50px 0;
-        }
-        .photo {
-            position: absolute;
-            width: 90%;
-            height: 90%;
-            object-fit: cover;
             border-radius: 50%;
+            background-image: url('eu.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        div::before {
+        .logo-principal::before {
             content:'';
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 110%;
+            height: 110%;
             border-radius: 50%;
             top: 0;
             left: 0;
-            box-shadow: inset 0 0 0 2px #6b86eb;
+            margin: -5%;
+            box-shadow: inset 0 0 0 2px #b4bde0;
             animation: clipme 5s linear infinite;
         }
         @keyframes clipme {
             0%, 100% {
-                clip: rect(20px , 225px, 130px, 0px);
+                clip: rect(20px , 225px, 140px, 0px);
             }
             100% {
                 transform: rotate(360deg);
             }
         }
-        ul {
+
+        /* CONF. BUTTON LINKS */
+
+        .list-port {
             list-style: none;
             display: flex;
             flex-direction: column;
@@ -94,9 +102,9 @@
         }
         .btn:active {
             transform: translateY(4%) translateX(1%);
-            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
         }
-        .btn-img {
+        .logo-img {
             margin-right: 50px;
             animation: logoanime 2s linear infinite;
         }
@@ -114,34 +122,34 @@
     </style>
 </head>
 <body>
-    <div>
-        <img class="photo" src="imoredog.png" alt="I and my especial dog">
-    </div>
-    <ul>
-        <li>
-            <button class="btn" onclick=" window.open('https://github.com/ViniciusJMoreira', '_blank')">
-                <img class="btn-img" src="git-ico.png" alt="">
-                GitHub
-            </button>
-        </li>
-        <li>
-            <button class="btn" onclick=" window.open('#', '_blank')">
-                <img class="btn-img" src="linkin-ico.png" alt="">
-                Linkedin
-            </button>
-        </li>
-        <li>
-            <button class="btn" onclick=" window.open('#', '_blank')">
-                <img class="btn-img" src="inst-ico.png" alt="">
-                Instagram
-            </button>
-        </li>
-        <li>
-            <button class="btn" onclick=" window.open('#', '_blank')">
-                <img class="btn-img" src="twt-ico.png" alt="">
-                Twitter
-            </button>
-        </li>
-    </ul>
+    <header class="logo-principal"></header>
+    <main>
+        <ul class="list-port">
+            <li>
+                <button class="btn" onclick=" window.open('https://github.com/ViniciusJMoreira', '_blank')">
+                    <img class="logo-img" src="git-ico.png" alt="Logo do Github">
+                    GitHub
+                </button>
+            </li>
+            <li>
+                <button class="btn" onclick=" window.open('#', '_blank')">
+                    <img class="logo-img" src="linkin-ico.png" alt="Logo do Linkedin">
+                    Linkedin
+                </button>
+            </li>
+            <li>
+                <button class="btn" onclick=" window.open('#', '_blank')">
+                    <img class="logo-img" src="inst-ico.png" alt="Logo do Instagram">
+                    Instagram
+                </button>
+            </li>
+            <li>
+                <button class="btn" onclick=" window.open('#', '_blank')">
+                    <img class="logo-img" src="twt-ico.png" alt="Logo do Twitter">
+                    Twitter
+                </button>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
