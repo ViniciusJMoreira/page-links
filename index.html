@@ -17,7 +17,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #fff;
+            background: url('background.jpg'), #fff;
+            background-size: 30px 30px;
+            animation: background-anime 60s linear infinite;
+        }
+        @keyframes background-anime {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
         }
         div {
             width: 150px;
@@ -80,19 +90,26 @@
             cursor: pointer;
             border: 2px solid #6b86eb;
             padding: 0.5rem 0.8rem;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
         }
-        .btn::before {
-            content:'';
-            position: absolute;
-            width: 90%;
-            height: 10%;
-            top: 0;
-            left: 20px;
-            background-color: rgba(255, 255, 255, .04);
-
+        .btn:active {
+            transform: translateY(4%) translateX(1%);
+            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
         }
         .btn-img {
             margin-right: 50px;
+            animation: logoanime 2s linear infinite;
+        }
+        @keyframes logoanime {
+            30% {
+                transform: translateY(-2px);
+            }
+            60% {
+                transform: translateY(2px);
+            }
+            100% {
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
