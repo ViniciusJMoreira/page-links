@@ -28,7 +28,7 @@ body {
     display: grid;
     place-items: center;
     position: relative;
-    margin: 40px 0 30px 0;
+    margin: 40px 0 40px 0;
     border-radius: 50%;
     background-image: url('myphoto.png');
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 38px;
 }
 li {
     width: 100%;
@@ -108,9 +108,9 @@ li {
     }
 }
 h2 {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-weight: 500;
 }
 h5 {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
