@@ -70,13 +70,11 @@ li {
     width: 100%;
 }
 .btn {
-    width: 100%;
-    width: 400px;
+    width: 500px;
     color: #b1b1b1;
     position: relative;
-    display: flex;
-    align-items: center;
-    text-align: start;
+    display: grid;
+    place-items: center;
     background-color: #252525;
     font-family: monospace, sans-serif;
     font-size: 18px;
@@ -85,15 +83,22 @@ li {
     border-radius: 25px;
     cursor: pointer;
     border: 2px solid #000000;
-    padding: 0.5rem 0.8rem;
+    padding: 0.7rem 0.8rem;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 550px) {
+    .btn {
+        width: 300px;
+    }
 }
 .btn:active {
     transform: translateY(4%) translateX(1%);
     box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
 }
 .logo-img {
-    margin-right: 110px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
     animation: logoanime 2s linear infinite;
 }
 @keyframes logoanime {
