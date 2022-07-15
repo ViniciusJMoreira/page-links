@@ -75,16 +75,16 @@ li {
     position: relative;
     display: grid;
     place-items: center;
-    background-color: #252525;
+    background-color: #181818;
     font-family: monospace, sans-serif;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 2px;
     border-radius: 25px;
     cursor: pointer;
-    border: 2px solid #000000;
     padding: 0.7rem 0.8rem;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 @media (max-width: 550px) {
     .btn {
