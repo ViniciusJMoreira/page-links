@@ -81,6 +81,7 @@ li {
     font-weight: 700;
     letter-spacing: 2px;
     border-radius: 25px;
+    border: 2px solid #000;
     cursor: pointer;
     padding: 0.7rem 0.8rem;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
