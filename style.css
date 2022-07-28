@@ -16,7 +16,7 @@ body {
     align-items: center;
     background: url('back.jpg'), #181818;
     background-size: contain;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     font-family: monospace, sans-serif;
     text-align: center;
     color: #b1b1b1;
