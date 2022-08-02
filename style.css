@@ -22,11 +22,21 @@ body {
     text-align: center;
     color: #b1b1b1;
 }
+li {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+ul {
+    list-style: none;
+}
+
 /* HEADER */
 .header {
-  display: flex;
-  width: 100vw;
-  height: auto;
+    display: flex;
+    width: 100vw;
+    height: auto;
 }
 
 .logo-principal {
@@ -73,12 +83,6 @@ body {
     width: 25px;
     height: auto;
 }
-li {
-    width: 100%;
-    height: auto;
-    display: grid;
-    place-items: center;
-}
 
 main {
     width: 100vw;
@@ -98,7 +102,7 @@ main {
     margin-top: 5em;
 }
 .btn {
-    width: 600px;
+    width: 550px;
     height: auto;
     color: #b1b1b1;
     position: relative;
@@ -126,12 +130,14 @@ main {
     .btn {
         width: 400px;
         height: auto;
+        font-size: 17px;
     }
 }
 @media (max-width: 480px) {
     .btn {
         width: 250px;
         height: auto;
+        font-size: 15px;
     }
 }
 .btn:active {
@@ -144,6 +150,18 @@ main {
     top: 10px;
     left: 16px;
     animation: logoanime 2s linear infinite;
+}
+@media (max-width: 580px) {
+    .logo-img {
+        width: 22px;
+        left: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .logo-img {
+        width: 18px;
+        left: 12px;
+    }
 }
 @keyframes logoanime {
     30% {
@@ -163,7 +181,4 @@ h2 {
 }
 h5 {
     margin-bottom: 20px;
-}
-ul {
-    list-style: none;
 }
