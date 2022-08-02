@@ -10,6 +10,7 @@
     box-sizing: border-box;
 }
 body {
+    width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -121,6 +122,9 @@ main {
     z-index: 1;
 }
 @media (max-width: 740px) {
+    body {
+        background: url('background.728.png');
+    }
     .btn {
         width: 500px;
         height: auto;
