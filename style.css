@@ -41,7 +41,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1.5em;
+    margin:2em 0;
 }
 
 .logo-principal {
