@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url('background.jpg'), #181818;
+    background: url('background.png'), #181818;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -146,6 +146,9 @@ ul {
     }
 }
 @media (max-width: 480px) {
+    body {
+        background: url('background.375.png');
+    }
     .btn {
         width: 250px;
         height: auto;
