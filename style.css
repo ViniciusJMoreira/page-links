@@ -142,10 +142,10 @@ ul {
 }
 @media (max-width: 768px) {
     body {
-        background: url('background.728.png');
+        background: url('background.768.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: bottom center;
+        background-position: top center;
     }
     .btn {
         width: 500px;
