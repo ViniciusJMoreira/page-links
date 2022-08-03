@@ -19,6 +19,7 @@ body {
     background: url('background.2560.png'), #181818;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top center;
     font-family: monospace, sans-serif;
     text-align: center;
     color: #b1b1b1;
@@ -40,7 +41,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:2em 0;
+    margin-top: 2em;
 }
 
 .logo-principal {
@@ -102,7 +103,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 6em 0;
+    margin: 6em 0 8em 0;
 }
 
 #list-port {
@@ -136,6 +137,7 @@ ul {
         background: url('background.1920.png');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: top center;
     }
 }
 @media (max-width: 768px) {
