@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content:space-around ;
     align-items: center;
-    background: url('background.1920.png'), #181818;
+    background: url('background.2560.png'), #181818;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -131,6 +131,11 @@ ul {
     padding: 0.7rem 0.8rem;
     box-shadow: 10px 18px 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
+}
+@media (max-width: 1920px) {
+    body {
+        background: url('background.1920.png');
+    }
 }
 @media (max-width: 768px) {
     body {
