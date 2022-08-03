@@ -18,7 +18,6 @@ body {
     align-items: center;
     background: url('background.2560.png'), #181818;
     background-size: cover;
-    background-position: top center;
     background-repeat: no-repeat;
     font-family: monospace, sans-serif;
     text-align: center;
@@ -135,11 +134,15 @@ ul {
 @media (max-width: 1920px) {
     body {
         background: url('background.1920.png');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 @media (max-width: 768px) {
     body {
         background: url('background.728.png');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .btn {
         width: 500px;
@@ -156,6 +159,8 @@ ul {
 @media (max-width: 480px) {
     body {
         background: url('background.375.png');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .btn {
         width: 250px;
