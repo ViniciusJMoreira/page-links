@@ -164,6 +164,7 @@ ul {
         background: url('background.375.png');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: top center;
     }
     .btn {
         width: 250px;
