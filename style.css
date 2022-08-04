@@ -134,7 +134,7 @@ ul {
 }
 @media (max-width: 1920px) {
     body {
-        background: url('background.1920.png');
+        background: url('background.1920.png'), #181818;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
@@ -142,7 +142,7 @@ ul {
 }
 @media (max-width: 768px) {
     body {
-        background: url('background.768.png');
+        background: url('background.768.png'), #181818;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom center;
@@ -161,7 +161,7 @@ ul {
 }
 @media (max-width: 480px) {
     body {
-        background: url('background.375.png');
+        background: url('background.375.png'), #181818;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
