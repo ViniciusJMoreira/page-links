@@ -19,7 +19,7 @@ body {
     background: url('../imagens/background.2560.png'), #181818;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: bottom center;
     font-family: monospace, sans-serif;
     text-align: center;
     color: #b1b1b1;
@@ -137,7 +137,7 @@ ul {
         background: url('../imagens/background.1920.png'), #181818;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top center;
+        background-position: bottom center;
     }
 }
 @media (max-width: 768px) {
@@ -164,7 +164,7 @@ ul {
         background: url('../imagens/background.375.png'), #181818;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top center;
+        background-position: bottom center;
     }
     .btn {
         width: 300px;
